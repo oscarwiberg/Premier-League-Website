@@ -1,11 +1,27 @@
 import React from 'react';
 import './Menu.css';
 
-const Menu = () => {
+const Menu = (props) => {
   return (
     <div className="menu">
-      <h2>Menu</h2>
-      <button id="close">&times; close</button>
+      <button className="closeBtn">Close</button>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Teams</a>
+        </li>
+        <li>
+          <a href="#">Top scorers</a>
+        </li>
+        <li>
+          <a href="#">Games</a>
+        </li>
+        <li>
+          <a href="#">Forum</a>
+        </li>
+      </ul>
     </div>
   );
 };

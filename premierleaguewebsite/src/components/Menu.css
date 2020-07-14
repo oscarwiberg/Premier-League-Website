@@ -3,11 +3,31 @@
   background-color: rgb(0, 0, 0);
   opacity: 0.7;
   color: white;
+  box-shadow: -4px -4px 5px rgba(0, 0, 0, 0.5);
   width: 400px;
   right: -100%;
   position: fixed;
   z-index: 200;
   animation: menu-open 0.75s forwards;
+}
+.menu ul {
+  list-style: none;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.menu a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.menu a:hover {
+  color: aqua;
+}
+.closeBtn {
+  position: absolute;
+  left: 0;
+  margin: 2%;
 }
 
 @keyframes menu-open {
