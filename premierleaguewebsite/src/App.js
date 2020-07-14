@@ -6,8 +6,8 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <h1>Hello world!</h1>
       <Header />
+      <div style={{ height: '200px' }}>Hello</div>
       <Footer />
     </div>
   );
