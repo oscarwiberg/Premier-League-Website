@@ -1,0 +1,17 @@
+.menu {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  color: white;
+  width: 400px;
+  right: -100%;
+  position: fixed;
+  z-index: 200;
+  animation: menu-open 0.75s forwards;
+}
+
+@keyframes menu-open {
+  100% {
+    right: 10%;
+  }
+}
