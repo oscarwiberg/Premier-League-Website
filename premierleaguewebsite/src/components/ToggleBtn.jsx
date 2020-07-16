@@ -1,11 +1,12 @@
 import React from 'react';
 import './ToggleBtn.css';
-import MenuIcon from '../utils/menuicon.png';
 
-const ToggleBtn = () => {
+const ToggleBtn = ({ click }) => {
   return (
-    <div className="toggleBtn">
-      <img className="menuIcon" src={MenuIcon} alt="Meny"></img>
+    <div className="toggleBtn" onClick={click}>
+      <div className="bar1"></div>
+      <div className="bar2"></div>
+      <div className="bar3"></div>
     </div>
   );
 };

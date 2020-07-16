@@ -4,7 +4,7 @@
   opacity: 0.7;
   color: white;
   box-shadow: -4px -4px 5px rgba(0, 0, 0, 0.5);
-  width: 400px;
+  width: 20%;
   right: -100%;
   position: fixed;
   z-index: 200;

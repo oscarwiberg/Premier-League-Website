@@ -2,11 +2,11 @@ import React from 'react';
 import './Header.css';
 import ToggleBtn from './ToggleBtn';
 
-const Header = () => {
+const Header = ({ toggleMenuHandler }) => {
   return (
     <div className="header">
       <h1 className="title">Header component</h1>
-      <ToggleBtn />
+      <ToggleBtn click={toggleMenuHandler} />
     </div>
   );
 };
