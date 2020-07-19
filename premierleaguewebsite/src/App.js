@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
+import Home from './components/home/Home';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,9 +20,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header toggleMenuHandler={toggleMenuHandler} />
+      <Header toggleMenuHandler={toggleMenuHandler} menuOpen={menuOpen} />
       {menu}
-      <div style={{ height: '200px' }}>Hello</div>
+      <Home />
       <Footer />
     </div>
   );

@@ -4,6 +4,7 @@ import './Menu.css';
 const Menu = (props) => {
   return (
     <div className="menu">
+      <button className="closeBtn">X</button>
       <ul>
         <li>
           <a href="#">Home</a>
