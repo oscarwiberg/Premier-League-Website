@@ -1,0 +1,7 @@
+.leagueTable {
+  width: 35vw;
+  height: 70vh;
+  border: 1px solid black;
+  display: inline-block;
+  margin-right: 1%;
+}

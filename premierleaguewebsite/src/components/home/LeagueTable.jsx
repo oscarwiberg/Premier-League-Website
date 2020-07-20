@@ -2,7 +2,7 @@ import React from 'react';
 import './LeagueTable.css';
 
 const LeagueTable = () => {
-  return <div>LeagueTable component</div>;
+  return <div className="leagueTable">LeagueTable component</div>;
 };
 
 export default LeagueTable;

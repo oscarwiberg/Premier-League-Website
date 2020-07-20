@@ -9,6 +9,7 @@
   position: fixed;
   z-index: 200;
   animation: menu-open 0.75s forwards;
+  text-align: center;
 }
 .menu ul {
   list-style: none;

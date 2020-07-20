@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
-  return <div className="footer">Footer component</div>;
+  return <footer>© 2020 Oscar Wiberg</footer>;
 };
 
 export default Footer;

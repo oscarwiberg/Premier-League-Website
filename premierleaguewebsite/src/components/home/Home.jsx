@@ -1,4 +1,5 @@
 import React from 'react';
+import './Home.css';
 import LeagueTable from './LeagueTable';
 import News from './News';
 
@@ -6,8 +7,10 @@ const Home = () => {
   return (
     <div>
       <h1>HOME</h1>
-      <LeagueTable />
-      <News />
+      <div className="homeContainer">
+        <LeagueTable />
+        <News />
+      </div>
     </div>
   );
 };
