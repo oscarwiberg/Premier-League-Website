@@ -20,7 +20,7 @@ function App() {
   let menu;
 
   if (menuOpen) {
-    menu = <Menu />;
+    menu = <Menu toggleMenuHandler={toggleMenuHandler} />;
   }
 
   return (
@@ -33,7 +33,6 @@ function App() {
         <Route path="/topscorers" component={TopScorers} />
         <Route path="/games" component={Games} />
         <Route path="/forum" component={Forum} />
-        {/* <Home /> */}
         <Footer />
       </Router>
     </div>

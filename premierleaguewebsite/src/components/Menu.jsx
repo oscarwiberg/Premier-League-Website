@@ -1,25 +1,38 @@
 import React from 'react';
 import './Menu.css';
+import { Link } from 'react-router-dom';
 
-const Menu = (props) => {
+const Menu = ({ toggleMenuHandler }) => {
   return (
     <div className="menu">
-      <button className="closeBtn">X</button>
+      <button className="closeBtn" onClick={toggleMenuHandler}>
+        X
+      </button>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <Link to="/" onClick={toggleMenuHandler}>
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#">Teams</a>
+          <Link to="/teams" onClick={toggleMenuHandler}>
+            Teams
+          </Link>
         </li>
         <li>
-          <a href="#">Top scorers</a>
+          <Link to="/topscorers" onClick={toggleMenuHandler}>
+            Top scorers
+          </Link>
         </li>
         <li>
-          <a href="#">Games</a>
+          <Link to="/games" onClick={toggleMenuHandler}>
+            Games
+          </Link>
         </li>
         <li>
-          <a href="#">Forum</a>
+          <Link to="/forum" onClick={toggleMenuHandler}>
+            Forum
+          </Link>
         </li>
       </ul>
     </div>
