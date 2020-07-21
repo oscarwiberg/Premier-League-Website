@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Menu = ({ toggleMenuHandler }) => {
   return (
     <div className="menu">
-      <button className="closeBtn" onClick={toggleMenuHandler}>
+      <div className="closeBtn" onClick={toggleMenuHandler}>
         X
-      </button>
+      </div>
       <img src="/utils/menuPL.png" alt="PLlogo"></img>
       <ul>
         <li>

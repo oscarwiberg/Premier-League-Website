@@ -8,9 +8,10 @@ const Header = ({ toggleMenuHandler, menuOpen }) => {
   if (!menuOpen) {
     menu = <ToggleBtn click={toggleMenuHandler} menuOpen={menuOpen} />;
   }
+
   return (
     <div className="header">
-      <h1 className="title">Header component</h1>
+      <img className="headerLogo" src="/utils/headerPL.png" alt="HeaderLogo" />
       {menu}
     </div>
   );

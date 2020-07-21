@@ -4,6 +4,7 @@
 }
 .Container {
   margin: 0 10% 0 10%;
+  min-height: 65vh;
 }
 
 body {

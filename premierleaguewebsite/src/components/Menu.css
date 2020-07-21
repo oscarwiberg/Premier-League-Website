@@ -1,5 +1,5 @@
 .menu {
-  height: 100vh;
+  height: 80vh;
   background-color: #360d3a;
   opacity: 0.7;
   color: white;
@@ -21,6 +21,7 @@
 .menu a {
   text-decoration: none;
   color: whitesmoke;
+  font-size: 1.3rem;
 }
 .menu a:hover {
   color: aqua;
@@ -37,6 +38,10 @@
   font-size: 25px;
 }
 
+.closeBtn:hover {
+  color: aqua;
+}
+
 .menu img {
   max-width: 50%;
   height: auto;
@@ -45,5 +50,13 @@
 @keyframes menu-open {
   100% {
     right: 0%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .menu a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.1rem;
   }
 }
