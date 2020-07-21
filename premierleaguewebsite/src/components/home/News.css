@@ -4,6 +4,7 @@
   display: inline-block;
   margin-left: 2%;
   background-color: #f6f6f6;
+  overflow: auto;
   -webkit-box-shadow: 10px 10px 23px -5px rgba(199, 199, 199, 1);
   -moz-box-shadow: 10px 10px 23px -5px rgba(199, 199, 199, 1);
   box-shadow: 10px 10px 23px -5px rgba(199, 199, 199, 1);
