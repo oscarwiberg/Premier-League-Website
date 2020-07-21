@@ -5,3 +5,6 @@
   padding: 1%;
   margin: 1% auto;
 }
+.Card p {
+  font-size: 0.7rem;
+}
