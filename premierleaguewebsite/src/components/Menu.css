@@ -1,6 +1,6 @@
 .menu {
   height: 100vh;
-  background-color: rgb(0, 0, 0);
+  background-color: #360d3a;
   opacity: 0.7;
   color: white;
   box-shadow: -4px -4px 5px rgba(0, 0, 0, 0.5);
@@ -29,10 +29,21 @@
   position: absolute;
   left: 0;
   margin: 2%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1% 2% 1% 2%;
+  font-size: 25px;
+}
+
+.menu img {
+  max-width: 50%;
+  height: auto;
 }
 
 @keyframes menu-open {
   100% {
-    right: 10%;
+    right: 0%;
   }
 }

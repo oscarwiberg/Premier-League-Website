@@ -1,6 +1,8 @@
 .App {
   position: relative;
   min-height: 100vh;
+}
+.Container {
   margin: 0 10% 0 10%;
 }
 

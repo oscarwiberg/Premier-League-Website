@@ -28,11 +28,13 @@ function App() {
       <Router>
         <Header toggleMenuHandler={toggleMenuHandler} menuOpen={menuOpen} />
         {menu}
-        <Route path="/" exact component={Home} />
-        <Route path="/teams" component={Teams} />
-        <Route path="/topscorers" component={TopScorers} />
-        <Route path="/games" component={Games} />
-        <Route path="/forum" component={Forum} />
+        <div className="Container">
+          <Route path="/" exact component={Home} />
+          <Route path="/teams" component={Teams} />
+          <Route path="/topscorers" component={TopScorers} />
+          <Route path="/games" component={Games} />
+          <Route path="/forum" component={Forum} />
+        </div>
         <Footer />
       </Router>
     </div>

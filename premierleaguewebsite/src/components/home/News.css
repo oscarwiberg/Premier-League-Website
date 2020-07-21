@@ -1,7 +1,10 @@
 .news {
-  width: 35vw;
-  height: 70vh;
-  border: 1px solid black;
+  width: 40vw;
+  height: 60vh;
   display: inline-block;
-  margin-left: 1%;
+  margin-left: 2%;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 10px 10px 23px -5px rgba(199, 199, 199, 1);
+  -moz-box-shadow: 10px 10px 23px -5px rgba(199, 199, 199, 1);
+  box-shadow: 10px 10px 23px -5px rgba(199, 199, 199, 1);
 }

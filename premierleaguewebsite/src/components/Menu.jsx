@@ -8,6 +8,7 @@ const Menu = ({ toggleMenuHandler }) => {
       <button className="closeBtn" onClick={toggleMenuHandler}>
         X
       </button>
+      <img src="/utils/menuPL.png" alt="PLlogo"></img>
       <ul>
         <li>
           <Link to="/" onClick={toggleMenuHandler}>
