@@ -5,10 +5,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Menu from './components/Menu';
 import Home from './components/home/Home';
-import Teams from './components/pages/Teams';
-import TopScorers from './components/pages/TopScorers';
-import Games from './components/pages/Games';
-import Forum from './components/pages/Forum';
+import Teams from './components/teams/Teams';
+import TopScorers from './components/topScorers/TopScorers';
+import Games from './components/games/Games';
+import Forum from './components/forum/Forum';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
