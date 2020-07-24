@@ -1,0 +1,8 @@
+.container {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  min-height: 71.25vh;
+  margin-top: 2%;
+}

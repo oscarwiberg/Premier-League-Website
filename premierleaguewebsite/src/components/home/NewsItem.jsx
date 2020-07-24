@@ -19,17 +19,9 @@ const NewsItem = () => {
       .then((json) => setPhotos(json));
   }, []);
 
-  const photoItems = photos.map((photo) => (
-    <div key={photo.id} className="Photo">
-      <img src={photo.url} />
-    </div>
-  ));
-
-  console.log(photos[0]);
-
   const postItems = posts.map((post) => (
     <div key={post.id} className="Card">
-      <img src="https://via.placeholder.com/600/92c952" />
+      <img src="https://via.placeholder.com/600/92c952" alt={post.id} />
       <h4>{post.title}</h4>
       <p>{post.body}</p>
     </div>
