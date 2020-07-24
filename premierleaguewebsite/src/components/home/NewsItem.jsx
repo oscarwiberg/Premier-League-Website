@@ -5,7 +5,7 @@ import './NewsItem.css';
 
 const NewsItem = () => {
   const [posts, setPosts] = useState([]);
-  const [photos, setPhoto] = useState([]);
+  const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10')
@@ -16,17 +16,20 @@ const NewsItem = () => {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/photos?_start=0&_limit=10')
       .then((response) => response.json())
-      .then((json) => setPhoto(json));
+      .then((json) => setPhotos(json));
   }, []);
 
   const photoItems = photos.map((photo) => (
     <div key={photo.id} className="Photo">
-      <img src={photo.url} alt="Photo" />
+      <img src={photo.url} />
     </div>
   ));
 
+  console.log(photos[0]);
+
   const postItems = posts.map((post) => (
     <div key={post.id} className="Card">
+      <img src="https://via.placeholder.com/600/92c952" />
       <h4>{post.title}</h4>
       <p>{post.body}</p>
     </div>

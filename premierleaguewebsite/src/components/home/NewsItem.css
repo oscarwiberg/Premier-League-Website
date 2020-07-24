@@ -1,5 +1,5 @@
 .Card {
-  width: 80%;
+  width: 90%;
   background-color: white;
   padding: 2%;
   margin: 2% auto;
@@ -7,6 +7,17 @@
   -moz-box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
 }
+.Card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 .Card p {
   font-size: 0.7rem;
+}
+.Card img {
+  width: 8%;
+  height: 8%;
+  float: left;
+  margin-right: 1%;
+  margin-top: 1%;
 }
