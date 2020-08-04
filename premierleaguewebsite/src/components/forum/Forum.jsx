@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Forum.css';
+import ForumForm from './ForumForm';
 
 const Forum = () => {
   const [posts, setPosts] = useState([]);
@@ -19,7 +20,8 @@ const Forum = () => {
 
   return (
     <div>
-      <h1>Forum Component</h1>
+      <ForumForm />
+      <hr />
       {postItems}
     </div>
   );
