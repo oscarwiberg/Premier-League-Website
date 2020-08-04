@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './NewsItem.css';
 
-// Hämta data från JSON placeholder (bild, titel och text)
-
 const NewsItem = () => {
   const [posts, setPosts] = useState([]);
-  const [photos, setPhotos] = useState([]);
+  // const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10')
@@ -13,11 +11,11 @@ const NewsItem = () => {
       .then((json) => setPosts(json));
   }, []);
 
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/photos?_start=0&_limit=10')
-      .then((response) => response.json())
-      .then((json) => setPhotos(json));
-  }, []);
+  // useEffect(() => {
+  //   fetch('https://jsonplaceholder.typicode.com/photos?_start=0&_limit=10')
+  //     .then((response) => response.json())
+  //     .then((json) => setPhotos(json));
+  // }, []);
 
   const postItems = posts.map((post) => (
     <div key={post.id} className="Card">

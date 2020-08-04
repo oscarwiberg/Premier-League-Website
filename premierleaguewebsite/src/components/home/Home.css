@@ -6,12 +6,16 @@
 .subHeadingContainer {
   background-color: #360d3a;
   color: whitesmoke;
-  padding-bottom: 1%;
+  padding: 1%;
   width: 80%;
   margin: 2% auto;
   text-align: center;
   font-variant: small-caps;
 }
 .subHeadingContainer h1 {
+  margin-bottom: 1%;
+}
+
+.subHeadingContainer h5 {
   margin-bottom: 1%;
 }
