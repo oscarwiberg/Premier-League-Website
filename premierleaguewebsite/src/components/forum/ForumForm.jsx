@@ -19,8 +19,8 @@ const ForumForm = (props) => {
     e.preventDefault();
 
     const newPost = {
-      username: props.username,
-      post: props.post,
+      username: username,
+      post: post,
     };
 
     //   fetch('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10', {
