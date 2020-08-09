@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { createPost } from '../../actions/postActions';
 import './ForumForm.css';
 
-const ForumForm = () => {
+const ForumForm = (props) => {
   const [username, setUsername] = useState('');
   const [post, setPost] = useState('');
 
@@ -17,19 +19,20 @@ const ForumForm = () => {
     e.preventDefault();
 
     const newPost = {
-      username: { username },
-      post: { post },
+      username: props.username,
+      post: props.post,
     };
 
-    fetch('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10', {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-      },
-      body: JSON.stringify(newPost),
-    })
-      .then((res) => res.json())
-      .then((data) => console.log(data));
+    //   fetch('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10', {
+    //     method: 'POST',
+    //     headers: {
+    //       'content-type': 'application/json',
+    //     },
+    //     body: JSON.stringify(newPost),
+    //   })
+    //     .then((res) => res.json())
+    //     .then((data) => console.log(data));
+    props.createPost(newPost);
   };
 
   return (
@@ -58,5 +61,4 @@ const ForumForm = () => {
     </div>
   );
 };
-
-export default ForumForm;
+export default connect(null, { createPost })(ForumForm);

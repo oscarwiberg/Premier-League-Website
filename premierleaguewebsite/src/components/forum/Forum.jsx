@@ -1,17 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './Forum.css';
 import ForumForm from './ForumForm';
+import { fetchPosts } from '../../actions/postActions';
+import { connect } from 'react-redux';
 
-const Forum = () => {
-  const [posts, setPosts] = useState([]);
-
+const Forum = (props) => {
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10')
-      .then((response) => response.json())
-      .then((json) => setPosts(json));
+    props.fetchPosts();
   }, []);
 
-  const postItems = posts.map((post) => (
+  useEffect(() => {
+    props.posts.unshift(props.newPost);
+  }, [props.newPost]);
+
+  const postItems = props.posts.map((post) => (
     <div key={post.id}>
       <h3>{post.title}</h3>
       <p>{post.body}</p>
@@ -27,4 +29,9 @@ const Forum = () => {
   );
 };
 
-export default Forum;
+const mapStateToProps = (state) => ({
+  posts: state.posts.items,
+  newPost: state.posts.item,
+});
+
+export default connect(mapStateToProps, { fetchPosts })(Forum);
