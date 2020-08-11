@@ -15,9 +15,9 @@ const Forum = (props) => {
   }, [props.newPost]);
 
   const postItems = props.posts.map((post) => (
-    <div key={uuidv4()}>
-      <h3>{post.title}</h3>
-      <p>{post.body}</p>
+    <div className="postItem" key={uuidv4()}>
+      <h3 className="postHeading">{post.title}:</h3>
+      <p className="postText">{post.body}</p>
     </div>
   ));
 

@@ -1,0 +1,15 @@
+.postItem {
+  width: 90%;
+  background-color: white;
+  padding: 2%;
+  margin: 2% auto;
+  -webkit-box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px -10px rgba(0, 0, 0, 0.75);
+}
+
+.postHeading {
+}
+
+.postText {
+}
