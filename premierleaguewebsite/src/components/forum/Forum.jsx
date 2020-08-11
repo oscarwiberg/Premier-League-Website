@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import './Forum.css';
 import ForumForm from './ForumForm';
-import { fetchPosts } from '../../actions/postActions';
+import { fetchPosts, createPost } from '../../actions/postActions';
 import { connect } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 
 const Forum = (props) => {
   useEffect(() => {
@@ -14,7 +15,7 @@ const Forum = (props) => {
   }, [props.newPost]);
 
   const postItems = props.posts.map((post) => (
-    <div key={post.id}>
+    <div key={uuidv4()}>
       <h3>{post.title}</h3>
       <p>{post.body}</p>
     </div>
@@ -34,4 +35,4 @@ const mapStateToProps = (state) => ({
   newPost: state.posts.item,
 });
 
-export default connect(mapStateToProps, { fetchPosts })(Forum);
+export default connect(mapStateToProps, { fetchPosts, createPost })(Forum);

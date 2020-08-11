@@ -4,34 +4,25 @@ import { createPost } from '../../actions/postActions';
 import './ForumForm.css';
 
 const ForumForm = (props) => {
-  const [username, setUsername] = useState('');
-  const [post, setPost] = useState('');
+  const [title, setTitle] = useState('');
+  const [body, setBody] = useState('');
 
   const onChangeUsername = (e) => {
-    setUsername(e.target.value);
+    setTitle(e.target.value);
   };
 
   const onChangePost = (e) => {
-    setPost(e.target.value);
+    setBody(e.target.value);
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
 
     const newPost = {
-      username: username,
-      post: post,
+      title: title,
+      body: body,
     };
 
-    //   fetch('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10', {
-    //     method: 'POST',
-    //     headers: {
-    //       'content-type': 'application/json',
-    //     },
-    //     body: JSON.stringify(newPost),
-    //   })
-    //     .then((res) => res.json())
-    //     .then((data) => console.log(data));
     props.createPost(newPost);
   };
 
@@ -46,14 +37,14 @@ const ForumForm = (props) => {
             type="text"
             onChange={onChangeUsername}
             name="username"
-            value={username}
+            value={title}
           />
         </div>
         <div>
           <br />
           <label>Post:</label>
           <br />
-          <textarea name="post" onChange={onChangePost} value={post}></textarea>
+          <textarea name="post" onChange={onChangePost} value={body}></textarea>
         </div>
         <br />
         <button type="submit">Submit</button>
