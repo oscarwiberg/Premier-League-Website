@@ -24,7 +24,13 @@ const Forum = (props) => {
   return (
     <div>
       <ForumForm />
-      <hr />
+      <hr
+        style={{
+          color: '#360d3a',
+          backgroundColor: '#360d3a',
+          borderColor: '#360d3a',
+        }}
+      />
       {postItems}
     </div>
   );
