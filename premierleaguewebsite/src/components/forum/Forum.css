@@ -11,8 +11,8 @@
 .postHeading {
   text-transform: capitalize;
   margin-bottom: 1%;
+  font-weight: 500;
 }
 
 .postText {
-  font-weight: bold;
 }
